@@ -18,6 +18,10 @@ open your browser and type
 
 done
 
+## Screenshot
+
+![landing Page](image/screenshot.png)
+
 if i make mistake
 
 please tell me i will hear that. have a nice day friend
