@@ -1,0 +1,91 @@
+@import "bootstrap";
+@import "color";
+
+// font
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+* {
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+img {
+  max-width: 100%;
+}
+
+.btn {
+  height: 36px;
+  padding: 0 16px;
+  border: none;
+  outline: none;
+  &:hover {
+    color: $white;
+    background: lighten($black, 20%);
+  }
+}
+
+h3,
+h4 {
+  margin-top: 24px;
+}
+
+.row {
+  margin-bottom: 100px;
+}
+
+// button style
+.btn-black {
+  background: $black;
+  color: $white;
+}
+
+.btn-content {
+  margin-bottom: 40px;
+}
+
+// padding content
+@mixin padding-content() {
+  margin: 30px 76px 0 76px;
+}
+@mixin content {
+  margin: 30px 76px 0 0;
+}
+@mixin letter {
+  letter-spacing: 1px;
+  line-height: 30px;
+}
+// main
+.wrapper-front {
+  margin-top: 70px;
+  .content-front {
+    @include padding-content;
+    .title-front {
+      margin-bottom: 16px;
+      font-size: 2em;
+      font-weight: 900;
+    }
+    .describe-front {
+      @include letter;
+      margin-bottom: 24px;
+      line-height: 30px;
+    }
+  }
+}
+
+.service {
+  margin-top: 100px;
+  margin-bottom: 100px;
+
+  img {
+    margin-top: 40px;
+  }
+  figcaption {
+    font-weight: bold;
+    font-size: 0.85em;
+  }
+}
+
+.wrapper-content {
+  margin: 0 76px;
+}
+
+// end main
